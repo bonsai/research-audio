@@ -1,0 +1,118 @@
+version: 1
+title: Audio Research Domains
+principle: "domain is a research axis, not a filing cabinet"
+
+domains:
+  - id: device
+    name: Device
+    focus: "microphones, speakers, smartphones, sensors, instruments"
+  - id: audio-io
+    name: Audio I/O
+    focus: "recording, playback, routing, input/output"
+  - id: speech
+    name: Speech
+    focus: "recognition, utterance, prosody, speaker characteristics"
+  - id: tts
+    name: TTS
+    focus: "text-to-speech, local synthesis, tiny TTS"
+  - id: voice
+    name: Voice
+    focus: "voice conversion, singing voice, voice cloning"
+  - id: music
+    name: Music
+    focus: "composition, performance, generation, arrangement"
+  - id: live-coding
+    name: Live Coding
+    focus: "Strudel, Tidal, SuperCollider, code as performance"
+  - id: synthesis
+    name: Synthesis
+    focus: "FM, additive, subtractive, physical modeling, granular"
+  - id: sampling
+    name: Sampling
+    focus: "samples, slicing, rearrangement, granular processing"
+  - id: dsp
+    name: DSP
+    focus: "FFT, filters, delay, reverb, distortion, analysis"
+  - id: midi
+    name: MIDI
+    focus: "notes, CC, clock, controllers, instruments, DAWs"
+  - id: osc
+    name: OSC
+    focus: "real-time control between sound, visual, sensor and network systems"
+  - id: network-audio
+    name: Network Audio
+    focus: "WebSocket, WebRTC, synchronization, remote performance"
+  - id: spatial-audio
+    name: Spatial Audio
+    focus: "3D sound, HRTF, ambisonics, position and orientation"
+  - id: sound-vision
+    name: Sound + Vision
+    focus: "p5.js, Three.js, audio-reactive graphics"
+  - id: physical-computing
+    name: Physical Computing
+    focus: "Arduino, ESP32, Raspberry Pi, Bela, sensors and actuators"
+  - id: embedded-audio
+    name: Embedded Audio
+    focus: "small CPUs, edge inference, tiny synthesis and playback"
+  - id: web-audio
+    name: Web Audio
+    focus: "browser-native audio, AudioWorklet, Web MIDI and interaction"
+  - id: ai-audio
+    name: AI Audio
+    focus: "source separation, speech, music generation, acoustic understanding"
+  - id: installation
+    name: Installation / Environment
+    focus: "architecture, city, body, room, environmental sound"
+
+edge_axes:
+  - id: sound-as-data
+    name: Sound as Data
+    question: "What happens when sound becomes structured data?"
+  - id: sound-as-control
+    name: Sound as Control
+    question: "What can sound control?"
+  - id: body-as-instrument
+    name: Body as Instrument
+    question: "How can movement, touch and orientation become sound?"
+  - id: device-orchestra
+    name: Device Orchestra
+    question: "What happens when many devices become one instrument?"
+  - id: network-orchestra
+    name: Network Orchestra
+    question: "Can distance become part of musical performance?"
+  - id: sound-geometry
+    name: Sound Geometry
+    question: "How can sound map to SVG, DXF or 3D geometry?"
+  - id: sound-clock
+    name: Sound Clock
+    question: "Can sound become a clock, sequencer or temporal coordinate system?"
+  - id: spatial-computing
+    name: Spatial Computing
+    question: "Can physical space itself become an instrument?"
+  - id: machine-listening
+    name: Machine Listening
+    question: "What can a machine hear, classify or infer?"
+  - id: autonomous-music
+    name: Autonomous Music
+    question: "Can an agent listen, decide and perform?"
+
+cross_domain_rule:
+  description: "The interesting projects often live at the intersection of domains."
+  examples:
+    - [midi, sound-geometry]
+    - [device, body-as-instrument, synthesis]
+    - [web-audio, network-audio, device-orchestra]
+    - [sound-clock, live-coding, midi]
+    - [physical-computing, osc, sound-vision]
+    - [ai-audio, machine-listening, autonomous-music]
+
+research_rule:
+  sequence:
+    - question
+    - research
+    - minimal-experiment
+    - observation
+    - evidence
+    - knowledge
+    - next-question
+  principle: "Research creates knowledge. Field experiments verify it."
